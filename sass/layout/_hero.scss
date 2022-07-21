@@ -1,0 +1,28 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: getBgColor('hero');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+
+  @include textStyle(map-get($colors, 'lightText'), 44px, calc(60 / 44), 0.06em);
+  font-weight: 900;
+  text-transform: uppercase;
+}

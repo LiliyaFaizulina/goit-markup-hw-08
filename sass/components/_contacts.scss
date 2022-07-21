@@ -1,0 +1,22 @@
+.contacts-info__item {
+  & + & {
+    margin-top: 9px;
+  }
+}
+
+.contacts-info__map {
+  color: map-get($colors, 'lightText');
+  line-height: calc(24 / 14);
+}
+
+.contacts-info__link {
+  color: map-get($colors, 'translucentText');
+  line-height: calc(21 / 14);
+
+  transition: color $transitionDuration $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}

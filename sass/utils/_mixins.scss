@@ -1,0 +1,12 @@
+@mixin flexBox($display: flex, $content: center) {
+  display: $display;
+  align-items: center;
+  justify-content: $content;
+}
+
+@mixin textStyle($color, $fontSize, $lineHeight, $letterSpace: 0.03em) {
+  color: $color;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpace;
+}

@@ -1,0 +1,81 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background-color: getBgColor('primary');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform $transitionDuration $timingFunction;
+
+  .backdrop--is-hidden & {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.modal__text {
+  margin-bottom: 12px;
+
+  @include textStyle(map-get($colors, 'title'), 20px, calc(23 / 20));
+  font-weight: 700;
+  text-align: center;
+}
+
+.agreement {
+  @include flexBox();
+  gap: 7px;
+
+  line-height: calc(24 / 14);
+}
+
+.form__agreement {
+  margin-bottom: 30px;
+}
+
+.agreement__icon {
+  @extend %icon;
+
+  border: 2px solid map-get($colors, 'title');
+  border-radius: 2px;
+
+  background-color: getBgColor('primary');
+
+  .agreement__checkbox:checked + & {
+    background-color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.agreement__text {
+  user-select: none;
+}
+
+.agreement__link {
+  color: $accentColor;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+
+  transition: background-color $transitionDuration $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: getBgColor('hoverBtn');
+  }
+}

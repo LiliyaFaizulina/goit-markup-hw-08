@@ -1,0 +1,30 @@
+.benefits {
+  padding-bottom: 0px;
+
+  background-color: getBgColor('primary');
+}
+
+.benefits__list {
+  @include flexBox();
+  gap: $primaryGap;
+}
+
+.benefits__wrapper {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  background-color: getBgColor('secondary');
+  border-radius: 4px;
+}
+
+.benefits__title {
+  @include textStyle(map-get($colors, 'title'), inherit, calc(16 / 14));
+  text-transform: uppercase;
+}
+
+.benefits__text {
+  margin-top: 10px;
+
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}

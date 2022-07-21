@@ -1,0 +1,27 @@
+%headerLink {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  transition: color $transitionDuration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+%icon {
+  display: block;
+  align-self: center;
+
+  fill: currentColor;
+}
+
+%sectionTitle {
+  margin-bottom: 50px;
+
+  @include textStyle(map-get($colors, 'title'), 36px, calc(42 / 36));
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+.header {
+  background-color: getBgColor('primary');
+  border-bottom: 1px solid $borderColor;
+}
+
+.navigation,
+.header__container {
+  @include flexBox();
+}
+
+.contacts {
+  @include flexBox();
+  gap: $primaryGap;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.navigation__list {
+  @include flexBox();
+  gap: 50px;
+}
+
+.navigation__link {
+  display: block;
+  color: map-get($colors, 'title');
+  @extend %headerLink;
+}
+.contacts__link {
+  display: flex;
+  color: map-get($colors, 'primary');
+  @extend %headerLink;
+}
+
+.contacts__icon {
+  @extend %icon;
+  margin-right: 10px;
+}
+
+.navigation__link--current {
+  position: relative;
+  color: $accentColor;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+    background-color: $accentColor;
+    border-radius: 2px;
+  }
+}

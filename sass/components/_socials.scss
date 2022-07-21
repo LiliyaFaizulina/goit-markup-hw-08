@@ -1,0 +1,41 @@
+.socials {
+  @include flexBox();
+  gap: 10px;
+}
+
+.socials__link {
+  @include flexBox(inline-flex);
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.socials__link--light-theme {
+  color: $iconColor;
+  background-color: getBgColor('primary');
+
+  transition: color $transitionDuration $timingFunction,
+    background-color $transitionDuration $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'lightText');
+    background-color: $accentColor;
+  }
+}
+
+.socials__link--dark-theme {
+  color: map-get($colors, 'lightText');
+  background-color: getBgColor('icons');
+  transition: background-color $transitionDuration $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.socials__icon {
+  @extend %icon;
+}

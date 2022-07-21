@@ -1,0 +1,32 @@
+.services {
+  background-color: getBgColor('primary');
+}
+
+.services__title {
+  @extend %sectionTitle;
+}
+
+.services__list {
+  @include flexBox();
+  gap: $primaryGap;
+}
+
+.services__item {
+  position: relative;
+}
+
+.services__subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  margin-top: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+
+  background-color: getBgColor('services');
+  @include textStyle(map-get($colors, 'lightText'), inherit, calc(16 / 14));
+  text-align: center;
+  text-transform: uppercase;
+}
