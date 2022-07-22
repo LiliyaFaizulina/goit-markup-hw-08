@@ -121,33 +121,64 @@
           <h2 class="services__title">Чем мы занимаемся</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img
-                class="services__img"
-                src="./images/services/box1.jpg"
-                alt="Разработка приложений"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./images/services/box1.webp 1x, ./images/services/box1@2x.webp 2x"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="./images/services/box1.jpg 1x, ./images/services/box1@2x.jpg 2x"
+                />
+                <img
+                  class="services__img"
+                  src="./images/services/box1.jpg"
+                  alt="Разработка приложений"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="services__subtitle">Десктопные приложения</h3>
             </li>
             <li class="services__item">
-              <img
-                class="services__img"
-                src="./images/services/box2.jpg"
-                alt="Разработка мобильных приложений"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./images/services/box2.webp 1x, ./images/services/box2@2x.webp 2x"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="./images/services/box2.jpg 1x, ./images/services/box2@2x.jpg 2x"
+                />
+                <img
+                  loading="lazy"
+                  class="services__img"
+                  src="./images/services/box2.jpg"
+                  alt="Разработка мобильных приложений"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="services__subtitle">Мобильные приложения</h3>
             </li>
             <li class="services__item">
-              <img
-                class="services__img"
-                src="./images/services/box3.jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./images/services/box3.webp 1x, ./images/services/box3@2x.webp 2x"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="./images/services/box3.jpg 1x, ./images/services/box3@2x.jpg 2x"
+                />
+                <img
+                  class="services__img"
+                  src="./images/services/box3.jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="services__subtitle">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -159,13 +190,66 @@
           <h2 class="staff__title">Наша команда</h2>
           <ul class="staff__list">
             <li class="staff__item">
-              <img
-                class="staff__photo"
-                src="./images/staff/photo1.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/desktop/member1.webp    1x,
+                    ./images/staff/desktop/member1@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/desktop/member1.jpg    1x,
+                    ./images/staff/desktop/member1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/tablet/member1.webp    1x,
+                    ./images/staff/tablet/member1@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/tablet/member1.jpg    1x,
+                    ./images/staff/tablet/member1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/mobile/member1.webp    1x,
+                    ./images/staff/mobile/member1@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/mobile/member1.jpg    1x,
+                    ./images/staff/mobile/member1@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff__photo"
+                  loading="lazy"
+                  src="./images/staff/mobile/member1.jpg"
+                  alt="Фотография сотрудника"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="staff__meta">
                 <h3 class="staff__name">Игорь Демьяненко</h3>
                 <p class="staff__position" lang="en">Product Designer</p>
@@ -218,13 +302,66 @@
               </div>
             </li>
             <li class="staff__item">
-              <img
-                class="staff__photo"
-                src="./images/staff/photo2.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/desktop/member2.webp    1x,
+                    ./images/staff/desktop/member2@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/desktop/member2.jpg    1x,
+                    ./images/staff/desktop/member2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/tablet/member2.webp    1x,
+                    ./images/staff/tablet/member2@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/tablet/member2.jpg    1x,
+                    ./images/staff/tablet/member2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/mobile/member2.webp    1x,
+                    ./images/staff/mobile/member2@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/mobile/member2.jpg    1x,
+                    ./images/staff/mobile/member2@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff__photo"
+                  loading="lazy"
+                  src="./images/staff/mobile/member2.jpg"
+                  alt="Фотография сотрудника"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="staff__meta">
                 <h3 class="staff__name">Ольга Репина</h3>
                 <p class="staff__position" lang="en">Frontend Developer</p>
@@ -277,13 +414,66 @@
               </div>
             </li>
             <li class="staff__item">
-              <img
-                class="staff__photo"
-                src="./images/staff/photo3.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/desktop/member3.webp    1x,
+                    ./images/staff/desktop/member3@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/desktop/member3.jpg    1x,
+                    ./images/staff/desktop/member3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/tablet/member3.webp    1x,
+                    ./images/staff/tablet/member3@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/tablet/member3.jpg    1x,
+                    ./images/staff/tablet/member3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/mobile/member3.webp    1x,
+                    ./images/staff/mobile/member3@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/mobile/member3.jpg    1x,
+                    ./images/staff/mobile/member3@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff__photo"
+                  loading="lazy"
+                  src="./images/staff/mobile/member3.jpg"
+                  alt="Фотография сотрудника"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="staff__meta">
                 <h3 class="staff__name">Николай Тарасов</h3>
                 <p class="staff__position" lang="en">Marketing</p>
@@ -336,13 +526,66 @@
               </div>
             </li>
             <li class="staff__item">
-              <img
-                class="staff__photo"
-                src="./images/staff/photo4.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/desktop/member4.webp    1x,
+                    ./images/staff/desktop/member4@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/desktop/member4.jpg    1x,
+                    ./images/staff/desktop/member4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/tablet/member4.webp    1x,
+                    ./images/staff/tablet/member4@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/tablet/member4.jpg    1x,
+                    ./images/staff/tablet/member4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  srcset="
+                    ./images/staff/mobile/member4.webp    1x,
+                    ./images/staff/mobile/member4@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/staff/mobile/member4.jpg    1x,
+                    ./images/staff/mobile/member4@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="staff__photo"
+                  loading="lazy"
+                  src="./images/staff/mobile/member4.jpg"
+                  alt="Фотография сотрудника"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="staff__meta">
                 <h3 class="staff__name">Михаил Ермаков</h3>
                 <p class="staff__position" lang="en">UI Designer</p>

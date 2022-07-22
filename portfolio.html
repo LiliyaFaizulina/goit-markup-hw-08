@@ -84,13 +84,67 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__wrapper">
-                  <img
-                    class="project__img"
-                    src="./images/projects/team.jpg"
-                    alt="Команда технокряка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/projects/desktop/team.webp    1x,
+                        ./images/projects/desktop/team@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/projects/desktop/team.jpg    1x,
+                        ./images/projects/desktop/team@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/projects/tablet/team.webp    1x,
+                        ./images/projects/tablet/team@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/projects/tablet/team.jpg    1x,
+                        ./images/projects/tablet/team@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/projects/mobile/team.webp    1x,
+                        ./images/projects/mobile/team@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/projects/mobile/team.jpg    1x,
+                        ./images/projects/mobile/team@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="project__img"
+                      loading="lazy"
+                      src="./images/projects/mobile/team.jpg"
+                      alt="Команда технокряка"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -107,13 +161,66 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__wrapper">
-                  <img
-                    class="project__img"
-                    src="./images/projects/poster.jpg"
-                    alt="Баскетболисты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/projects/desktop/poster.webp    1x,
+                        ./images/projects/desktop/poster@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/projects/desktop/poster.jpg    1x,
+                        ./images/projects/desktop/poster@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/projects/tablet/poster.webp    1x,
+                        ./images/projects/tablet/poster@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/projects/tablet/poster.jpg    1x,
+                        ./images/projects/tablet/poster@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/projects/mobile/poster.webp    1x,
+                        ./images/projects/mobile/poster@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/projects/mobile/poster.jpg    1x,
+                        ./images/projects/mobile/poster@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="project__img"
+                      loading="lazy"
+                      src="./images/projects/mobile/poster.jpg"
+                      alt="Баскетболисты"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

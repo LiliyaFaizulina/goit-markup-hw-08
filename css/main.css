@@ -80,7 +80,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -292,23 +292,6 @@ address {
           justify-content: center;
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
-}
-
-.header__contacts {
-  margin-left: auto;
-}
-
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,16 +310,6 @@ address {
   color: #212121;
 }
 
-.contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contacts__icon {
-  margin-right: 10px;
-}
-
 .navigation__link--current {
   position: relative;
   color: #2196f3;
@@ -350,6 +323,33 @@ address {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__icon {
+  margin-right: 10px;
 }
 
 .hero {
@@ -803,6 +803,10 @@ address {
   text-align: center;
 }
 
+.form__agreement {
+  margin-bottom: 30px;
+}
+
 .agreement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,10 +819,6 @@ address {
           justify-content: center;
   gap: 7px;
   line-height: 1.7142857143;
-}
-
-.form__agreement {
-  margin-bottom: 30px;
 }
 
 .agreement__icon {
