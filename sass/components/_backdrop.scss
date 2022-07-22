@@ -9,8 +9,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity $transitionDuration $timingFunction,
-    visibility $transitionDuration $timingFunction;
+  transition: opacity $animation, visibility $animation;
 
   &--is-hidden {
     opacity: 0;

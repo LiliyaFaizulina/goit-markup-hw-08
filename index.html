@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW-01</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,10 +21,10 @@
   <body id="page">
     <header class="header">
       <div class="container header__container">
+        <a class="logo header__logo" href="./index.html">
+          Web<span class="logo__item logo__item--dark">Studio</span>
+        </a>
         <nav class="navigation">
-          <a class="logo header__logo" href="./index.html"
-            >Web<span class="logo__item logo__item--dark">Studio</span></a
-          >
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current" href="./index.html">Студия</a>
@@ -530,8 +530,8 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
         <form name="form">
+          <p class="form__description">Оставьте свои данные, мы вам перезвоним</p>
           <label class="form__label" for="name"> Имя </label>
           <div class="form__field">
             <input class="form__input" type="text" name="name" id="name" />
@@ -569,7 +569,7 @@
             <span class="agreement__text"> Соглашаюсь с рассылкой и принимаю </span>
             <a class="agreement__link" href="">Условия договора</a>
           </label>
-          <button class="submit-btn btn" type="submit">Отправить</button>
+          <button class="btn form__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>

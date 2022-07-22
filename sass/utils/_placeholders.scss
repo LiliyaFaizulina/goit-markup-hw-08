@@ -5,7 +5,7 @@
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  transition: color $transitionDuration $timingFunction;
+  transition: color $animation;
   &:hover,
   &:focus {
     color: $accentColor;

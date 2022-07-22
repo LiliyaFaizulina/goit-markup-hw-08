@@ -13,7 +13,7 @@
   color: map-get($colors, 'translucentText');
   line-height: calc(21 / 14);
 
-  transition: color $transitionDuration $timingFunction;
+  transition: color $animation;
 
   &:hover,
   &:focus {

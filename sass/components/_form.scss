@@ -1,0 +1,46 @@
+.form__description {
+  margin-bottom: 12px;
+
+  @include textStyle(map-get($colors, 'title'), 20px, calc(23 / 20));
+  font-weight: 700;
+  text-align: center;
+}
+
+.agreement {
+  @include flexBox();
+  gap: 7px;
+
+  line-height: calc(24 / 14);
+}
+
+.form__agreement {
+  margin-bottom: 30px;
+}
+
+.agreement__icon {
+  @extend %icon;
+
+  border: 2px solid map-get($colors, 'title');
+  border-radius: 2px;
+
+  background-color: getBgColor('primary');
+
+  .agreement__checkbox:checked + & {
+    background-color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.agreement__text {
+  user-select: none;
+}
+
+.agreement__link {
+  color: $accentColor;
+  text-decoration: underline;
+}
+
+.form__btn {
+  display: block;
+  margin: 0 auto;
+}

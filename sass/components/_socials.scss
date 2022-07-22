@@ -15,8 +15,7 @@
   color: $iconColor;
   background-color: getBgColor('primary');
 
-  transition: color $transitionDuration $timingFunction,
-    background-color $transitionDuration $timingFunction;
+  transition: color $animation, background-color $animation;
 
   &:hover,
   &:focus {
@@ -28,7 +27,7 @@
 .socials__link--dark-theme {
   color: map-get($colors, 'lightText');
   background-color: getBgColor('icons');
-  transition: background-color $transitionDuration $timingFunction;
+  transition: background-color $animation;
 
   &:hover,
   &:focus {

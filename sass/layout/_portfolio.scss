@@ -2,11 +2,8 @@
   background-color: getBgColor('primary');
 }
 
-.filter {
+.portfolio__filter {
   @include flexBox();
   gap: 8px;
-}
-
-.portfolio__filter {
   margin-bottom: 50px;
 }
