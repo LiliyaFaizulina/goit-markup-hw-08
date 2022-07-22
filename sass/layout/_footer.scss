@@ -1,21 +1,22 @@
 .footer {
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+  
   background-color: getBgColor('footer');
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer__wrapper {
-  @include flexBox();
+  // @include flexBox();
 }
 
 .footer__socials {
-  margin-left: 85px;
-  align-self: start;
-  padding-top: 12px;
+  // margin-left: 85px;
+  // align-self: start;
+  // padding-top: 12px;
 }
 
 .footer__label {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   font-weight: 700;
   @include textStyle(map-get($colors, 'lightText'), inherit, calc(16 / 14));
@@ -23,9 +24,9 @@
 }
 
 .footer__subscription {
-  margin-left: auto;
-  align-self: start;
-  padding-top: 12px;
+  // margin-left: auto;
+  // align-self: start;
+  // padding-top: 12px;
 }
 
 .footer__input {

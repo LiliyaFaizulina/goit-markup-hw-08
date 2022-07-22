@@ -1,0 +1,21 @@
+.menu-btn {
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding: 0;
+
+    border: none;
+    color: map-get($colors, 'logo');
+    background-color: getBgColor('primary');
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+  display: none;
+}
+.menu-btn__icon {
+  fill: currentColor;
+}

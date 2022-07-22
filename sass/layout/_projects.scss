@@ -1,7 +1,7 @@
 .project {
-  @include flexBox();
-  flex-wrap: wrap;
-  gap: 30px;
+  // @include flexBox();
+  // flex-wrap: wrap;
+  // gap: 30px;
 }
 
 .project__link {
@@ -50,7 +50,7 @@
 }
 
 .project__meta {
-  padding: 20px 24px;
+  // padding: 20px 24px;
   border-left: 1px solid $projectBorder;
   border-right: 1px solid $projectBorder;
   border-bottom: 1px solid $projectBorder;
@@ -61,7 +61,7 @@
 }
 
 .project__type {
-  margin-top: 4px;
+  // margin-top: 4px;
 
   @include textStyle(map-get($colors, 'primaryText'), $primaryFontSize, calc(30 / 16));
 }

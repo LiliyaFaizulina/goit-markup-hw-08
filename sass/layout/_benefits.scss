@@ -5,12 +5,12 @@
 }
 
 .benefits__list {
-  @include flexBox();
-  gap: $primaryGap;
+  // @include flexBox();
+  // gap: $primaryGap;
 }
 
 .benefits__wrapper {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   padding: 25px 100px;
 
   background-color: getBgColor('secondary');
@@ -23,7 +23,7 @@
 }
 
 .benefits__text {
-  margin-top: 10px;
+  // margin-top: 10px;
 
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;

@@ -5,12 +5,12 @@
 
 .navigation,
 .header__container {
-  @include flexBox();
+  // @include flexBox();
 }
 
 .navigation__list {
-  @include flexBox();
-  gap: 50px;
+  // @include flexBox();
+  // gap: 50px;
 }
 
 .navigation__link {
@@ -20,33 +20,33 @@
 }
 
 .navigation__link--current {
-  position: relative;
-  color: $accentColor;
+  // position: relative;
+  // color: $accentColor;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: -1px;
 
-    width: 100%;
-    height: 4px;
-    background-color: $accentColor;
-    border-radius: 2px;
-  }
+  //   width: 100%;
+  //   height: 4px;
+  //   background-color: $accentColor;
+  //   border-radius: 2px;
+  // }
 }
 
 .header__contacts {
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .contacts {
-  @include flexBox();
-  gap: $primaryGap;
+  // @include flexBox();
+  // gap: $primaryGap;
 }
 
 .contacts__link {
-  display: flex;
+  // display: flex;
   color: map-get($colors, 'primary');
   @extend %headerLink;
 }
