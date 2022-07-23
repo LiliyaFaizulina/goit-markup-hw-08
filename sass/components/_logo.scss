@@ -2,9 +2,12 @@
   color: $accentColor;
   font-family: $logoFontFamily, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+
+  // font-size: 26px;
+  // line-height: calc(31 / 26);
 }
 
 .header__logo {
@@ -12,8 +15,8 @@
 }
 
 .footer__logo {
-  // display: inline-block;
-  // margin-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .logo__item--dark {

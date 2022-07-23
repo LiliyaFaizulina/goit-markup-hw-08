@@ -1,17 +1,19 @@
 .contacts-info__item {
-  // & + & {
-  //   margin-top: 9px;
-  // }
+  & + & {
+    margin-top: 8px;
+  }
 }
 
 .contacts-info__map {
   color: map-get($colors, 'lightText');
-  line-height: calc(24 / 14);
+  line-height: calc(21 / 14);
+  letter-spacing: 0.03em;
 }
 
 .contacts-info__link {
   color: map-get($colors, 'translucentText');
   line-height: calc(21 / 14);
+  letter-spacing: 0.03em;
 
   transition: color $animation;
 

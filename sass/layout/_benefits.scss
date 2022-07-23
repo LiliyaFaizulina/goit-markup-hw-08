@@ -1,5 +1,5 @@
 .benefits {
-  padding-bottom: 0px;
+  // padding-bottom: 0px;
 
   background-color: getBgColor('primary');
 }
@@ -9,9 +9,19 @@
   // gap: $primaryGap;
 }
 
+.benefits__item {
+  &:not(:last-child) {
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .benefits__wrapper {
-  // margin-bottom: 30px;
-  padding: 25px 100px;
+  @include flexBox();
+  height: 120px;
+  max-width: 450px;
+  margin-bottom: 30px;
 
   background-color: getBgColor('secondary');
   border-radius: 4px;
@@ -20,10 +30,11 @@
 .benefits__title {
   @include textStyle(map-get($colors, 'title'), inherit, calc(16 / 14));
   text-transform: uppercase;
+  text-align: center;
 }
 
 .benefits__text {
-  // margin-top: 10px;
+  margin-top: 10px;
 
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;

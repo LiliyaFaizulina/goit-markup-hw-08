@@ -75,6 +75,7 @@
   @media screen and (max-width: ($tablet - 1px)) {
     display: flex;
     flex-direction: column-reverse;
+    flex-shrink: 2;
     gap: 32px;
   }
 
@@ -91,6 +92,7 @@
     }
 
     &--tel {
+      white-space: nowrap;
       color: $accentColor;
       font-size: 34px;
       line-height: calc(40 / 34);

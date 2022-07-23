@@ -6,7 +6,10 @@
 }
 
 .services__title {
-  @extend %sectionTitle;
+  margin-bottom: 50px;
+
+  @include textStyle(map-get($colors, 'title'), 36px, calc(42 / 36));
+  text-align: center;
 }
 
 .services__list {

@@ -1,7 +1,7 @@
 .footer {
-  // padding-top: 60px;
-  // padding-bottom: 60px;
-  
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: getBgColor('footer');
 }
 
@@ -9,14 +9,25 @@
   // @include flexBox();
 }
 
+.footer__contacts {
+  @media screen and (max-width: ($desktop - 1px)) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
 .footer__socials {
+  @media screen and (max-width: ($desktop - 1px)) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
   // margin-left: 85px;
   // align-self: start;
   // padding-top: 12px;
 }
 
-.footer__label {
-  // margin-bottom: 20px;
+.footer__message {
+  margin-bottom: 20px;
 
   font-weight: 700;
   @include textStyle(map-get($colors, 'lightText'), inherit, calc(16 / 14));
@@ -24,17 +35,21 @@
 }
 
 .footer__subscription {
+  @media screen and (max-width: ($desktop - 1px)) {
+    text-align: center;
+  }
   // margin-left: auto;
   // align-self: start;
   // padding-top: 12px;
 }
 
 .footer__input {
-  display: inline-flex;
-  margin-right: 12px;
+  display: flex;
+  margin-bottom: 20px;
+  // margin-right: 12px;
   padding-left: 16px;
 
-  width: 358px;
+  flex-basis: 100%;
   height: 50px;
 
   background-color: inherit;
