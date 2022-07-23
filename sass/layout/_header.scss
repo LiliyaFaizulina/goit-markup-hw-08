@@ -3,9 +3,19 @@
   border-bottom: 1px solid $borderColor;
 }
 
-.navigation,
 .header__container {
+  @media screen and (max-width: ($tablet - 1px)) {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   // @include flexBox();
+}
+
+.navigation {
+  @media screen and (max-width: ($tablet - 1px)) {
+    margin-bottom: 302px;
+  }
 }
 
 .navigation__list {
@@ -13,15 +23,33 @@
   // gap: 50px;
 }
 
+.navigation__item {
+  &:not(:last-child) {
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
 .navigation__link {
   display: block;
-  color: map-get($colors, 'title');
-  @extend %headerLink;
+
+  @include textStyle(map-get($colors, 'title'), 40px, calc(47 / 40), 0.02em);
+  font-weight: 500;
+
+  transition: color $animation;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  // color: map-get($colors, 'title');
+  // @extend %headerLink;
 }
 
 .navigation__link--current {
+  color: $accentColor;
+
   // position: relative;
-  // color: $accentColor;
 
   // &::after {
   //   content: '';
@@ -37,21 +65,55 @@
 }
 
 .header__contacts {
+  @media screen and (max-width: ($tablet - 1px)) {
+    margin-bottom: 64px;
+  }
   // margin-left: auto;
 }
 
 .contacts {
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+
   // @include flexBox();
   // gap: $primaryGap;
 }
 
 .contacts__link {
+  @media screen and (max-width: ($tablet - 1px)) {
+    &--mail {
+      color: map-get($colors, 'primaryText');
+      font-size: 24px;
+      line-height: calc(28 / 24);
+    }
+
+    &--tel {
+      color: $accentColor;
+      font-size: 34px;
+      line-height: calc(40 / 34);
+    }
+  }
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  transition: color $animation;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
   // display: flex;
-  color: map-get($colors, 'primary');
-  @extend %headerLink;
+  // color: map-get($colors, 'primary');
+  // @extend %headerLink;
 }
 
 .contacts__icon {
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: none;
+  }
   @extend %icon;
   margin-right: 10px;
 }

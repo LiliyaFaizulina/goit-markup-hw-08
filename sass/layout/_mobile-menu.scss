@@ -1,5 +1,10 @@
 .menu-btn {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ($tablet - 1px)) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
+
     display: block;
     padding: 0;
 
@@ -16,6 +21,68 @@
   }
   display: none;
 }
+
 .menu-btn__icon {
   fill: currentColor;
+}
+
+.menu-btn__open {
+  display: block;
+
+  .is-open & {
+    display: none;
+  }
+}
+
+.menu-btn__close {
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  @media screen and (max-width: ($tablet - 1px)) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    &.is-open {
+      display: block;
+      z-index: 1;
+    }
+
+    padding: 48px 40px;
+    width: 100%;
+
+    background-color: getBgColor('primary');
+  }
+}
+
+.mobile-menu__socials {
+  display: none;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.mobile-menu__item:not(:last-child) {
+  display: flex;
+  gap: 10px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  @include textStyle($accentColor, 18px, calc(22 / 18), 0.02em);
 }
