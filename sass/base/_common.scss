@@ -5,8 +5,8 @@
   padding-right: 15px;
 
   @media screen and (max-width: ($tablet - 1px)) {
-    min-width: 320px;
     max-width: $mobile;
+    width: 100%;
   }
 
   @media screen and (min-width: $tablet) {

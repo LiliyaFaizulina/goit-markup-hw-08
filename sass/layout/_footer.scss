@@ -44,12 +44,15 @@
 }
 
 .footer__input {
-  display: flex;
+  display: block;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   // margin-right: 12px;
   padding-left: 16px;
 
-  flex-basis: 100%;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
 
   background-color: inherit;
