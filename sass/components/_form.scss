@@ -1,9 +1,12 @@
 .form__description {
   margin-bottom: 12px;
 
-  @include textStyle(map-get($colors, 'title'), 20px, calc(23 / 20));
+  @include textStyle(map-get($colors, 'title'), 20px, calc(30 / 20));
   font-weight: 700;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    line-height: calc(23 / 20);
+  }
 }
 
 .form__agreement {
@@ -13,8 +16,16 @@
 .agreement {
   @include flexBox();
   gap: 7px;
+  flex-wrap: wrap;
 
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .agreement__icon {
