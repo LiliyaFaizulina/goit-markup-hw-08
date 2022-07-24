@@ -5,22 +5,32 @@
   background-color: getBgColor('footer');
 }
 
-.footer__wrapper {
+.footer__container {
   // @include flexBox();
 }
 
-.footer__contacts {
-  @media screen and (max-width: ($desktop - 1px)) {
-    text-align: center;
+.footer__wrapper {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+    @include flexBox();
     margin-bottom: 60px;
+    gap: 165px;
   }
 }
 
-.footer__socials {
-  @media screen and (max-width: ($desktop - 1px)) {
-    text-align: center;
+.footer__contacts {
+  @media screen and (max-width: ($tablet - 1px)) {
     margin-bottom: 60px;
   }
+
+  text-align: center;
+}
+
+.footer__socials {
+  @media screen and (max-width: ($tablet - 1px)) {
+    margin-bottom: 60px;
+  }
+
+  text-align: center;
   // margin-left: 85px;
   // align-self: start;
   // padding-top: 12px;

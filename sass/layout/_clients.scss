@@ -23,8 +23,16 @@
 }
 
 .clients__item {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - $primaryGap) / 2);
   height: 92px;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - $primaryGap * 2) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - $primaryGap * 5) / 6);
+  }
 }
 
 .clients__link {

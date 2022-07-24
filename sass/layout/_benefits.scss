@@ -1,12 +1,17 @@
 .benefits {
-  // padding-bottom: 0px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0px;
+  }
 
   background-color: getBgColor('primary');
 }
 
 .benefits__list {
-  // @include flexBox();
-  // gap: $primaryGap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: $primaryGap;
+    flex-wrap: wrap;
+  }
 }
 
 .benefits__item {
@@ -14,6 +19,9 @@
     @media screen and (max-width: ($tablet - 1px)) {
       margin-bottom: 30px;
     }
+  }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
@@ -30,7 +38,10 @@
 .benefits__title {
   @include textStyle(map-get($colors, 'title'), inherit, calc(16 / 14));
   text-transform: uppercase;
-  text-align: center;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    text-align: center;
+  }
 }
 
 .benefits__text {

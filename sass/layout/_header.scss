@@ -9,7 +9,17 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  // @include flexBox();
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mobile-menu {
+  @media screen and (min-width: $tablet) {
+    @include flexBox();
+  }
 }
 
 .navigation {
@@ -19,8 +29,10 @@
 }
 
 .navigation__list {
-  // @include flexBox();
-  // gap: 50px;
+  @media screen and (min-width: $tablet) {
+    @include flexBox();
+    gap: 50px;
+  }
 }
 
 .navigation__item {
@@ -42,40 +54,54 @@
   &:focus {
     color: $accentColor;
   }
-  // color: map-get($colors, 'title');
-  // @extend %headerLink;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
 
 .navigation__link--current {
   color: $accentColor;
 
-  // position: relative;
+  @media screen and (min-width: $tablet) {
+    position: relative;
 
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   left: 0;
-  //   bottom: -1px;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
 
-  //   width: 100%;
-  //   height: 4px;
-  //   background-color: $accentColor;
-  //   border-radius: 2px;
-  // }
+      width: 100%;
+      height: 4px;
+      background-color: $accentColor;
+      border-radius: 2px;
+    }
+  }
 }
 
 .header__contacts {
   @media screen and (max-width: ($tablet - 1px)) {
     margin-bottom: 64px;
   }
-  // margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 }
 
 .contacts {
   @media screen and (max-width: ($tablet - 1px)) {
     display: flex;
     flex-direction: column-reverse;
-    flex-shrink: 2;
     gap: 32px;
   }
 
@@ -107,8 +133,15 @@
   &:focus {
     color: $accentColor;
   }
-  // display: flex;
-  // color: map-get($colors, 'primary');
+
+  @media screen and (min-width: $tablet) {
+    @include flexBox(flex, start);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   // @extend %headerLink;
 }
 
@@ -117,5 +150,9 @@
     display: none;
   }
   @extend %icon;
-  margin-right: 10px;
+  margin-right: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
 }

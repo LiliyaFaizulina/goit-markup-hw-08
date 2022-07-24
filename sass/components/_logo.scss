@@ -6,12 +6,20 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
 
-  // font-size: 26px;
-  // line-height: calc(31 / 26);
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .header__logo {
-  // margin-right: 93px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
