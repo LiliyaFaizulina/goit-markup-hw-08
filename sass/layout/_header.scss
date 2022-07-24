@@ -94,7 +94,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: auto;
+    margin-left: 305px;
   }
 }
 
@@ -105,8 +105,10 @@
     gap: 32px;
   }
 
-  // @include flexBox();
-  // gap: $primaryGap;
+  @media screen and (min-width: $desktop) {
+    @include flexBox();
+    gap: $primaryGap;
+  }
 }
 
 .contacts__link {
@@ -142,13 +144,20 @@
     padding-bottom: 5px;
   }
 
-  // @extend %headerLink;
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
 
 .contacts__icon {
   @media screen and (max-width: ($tablet - 1px)) {
     display: none;
   }
+
   @extend %icon;
   margin-right: 8px;
 

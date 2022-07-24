@@ -18,6 +18,10 @@
   @media screen and (min-width: $tablet) {
     max-width: calc((100% - $primaryGap) / 2);
   }
+
+  @media screen and (min-width: $desktop) {
+    max-width: calc((100% - $primaryGap * 2) / 3);
+  }
 }
 
 .project__link {
