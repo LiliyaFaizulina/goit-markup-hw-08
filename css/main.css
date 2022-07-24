@@ -834,11 +834,30 @@ address {
   background-color: #ffffff;
 }
 
-.project__link {
-  display: block;
+.portfolio__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  margin-bottom: 40px;
+}
+
+.project__item {
+  max-width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .project__link {
+  display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -883,6 +902,7 @@ address {
 }
 
 .project__meta {
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -896,6 +916,7 @@ address {
 }
 
 .project__type {
+  margin-top: 4px;
   color: #757575;
   font-size: 16px;
   line-height: 1.875;
