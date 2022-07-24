@@ -8,11 +8,11 @@
 
   background-color: getBgColor('hero');
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/hero/mobile-banner.jpg);
+    url(../images/hero/mobile-banner.jpg);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/mobile-banner@2x.jpg);
+      url(../images/hero/mobile-banner@2x.jpg);
   }
 
   background-position: center;
@@ -27,11 +27,11 @@
     max-width: 768px;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/tablet-banner.jpg);
+      url(../images/hero/tablet-banner.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero/tablet-banner@2x.jpg);
+        url(../images/hero/tablet-banner@2x.jpg);
     }
   }
 
@@ -42,11 +42,11 @@
     max-width: 1600px;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/banner.jpg);
+      url(../images/hero/banner.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero/banner@2x.jpg);
+        url(../images/hero/banner@2x.jpg);
     }
   }
 }
