@@ -1,7 +1,9 @@
 .project {
-  // @include flexBox();
-  // flex-wrap: wrap;
-  // gap: 30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $primaryGap;
+  }
 }
 
 .project__item {
@@ -12,6 +14,10 @@
   }
 
   max-width: 450px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: calc((100% - $primaryGap) / 2);
+  }
 }
 
 .project__link {
@@ -61,6 +67,11 @@
   border-left: 1px solid $projectBorder;
   border-right: 1px solid $projectBorder;
   border-bottom: 1px solid $projectBorder;
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+    .project__item:first-child & {
+      padding-bottom: 56px;
+    }
+  }
 }
 
 .project__title {

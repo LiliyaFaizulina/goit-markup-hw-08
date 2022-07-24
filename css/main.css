@@ -1051,6 +1051,30 @@ address {
           column-gap: 8px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filter {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .project__item {
   max-width: 450px;
@@ -1058,6 +1082,11 @@ address {
 @media screen and (max-width: 767px) {
   .project__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    max-width: calc((100% - 30px) / 2);
   }
 }
 
@@ -1111,6 +1140,11 @@ address {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__item:first-child .project__meta {
+    padding-bottom: 56px;
+  }
 }
 
 .project__title {
