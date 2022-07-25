@@ -549,6 +549,11 @@ address {
     line-height: 1.1764705882;
   }
 }
+@media screen and (max-width: 767px) and (max-width: 350px) {
+  .contacts__link--tel {
+    font-size: 9vw;
+  }
+}
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
