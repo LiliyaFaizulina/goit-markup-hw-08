@@ -19,6 +19,7 @@
 .mobile-menu {
   @media screen and (min-width: $tablet) {
     @include flexBox();
+    flex-grow: 1;
   }
 }
 
@@ -90,11 +91,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-left: 84px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-left: 305px;
+    margin-left: auto;
   }
 }
 

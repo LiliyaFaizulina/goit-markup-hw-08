@@ -25,7 +25,10 @@
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
   transition: box-shadow $animation;
 
   &:hover,
@@ -71,11 +74,7 @@
   border-left: 1px solid $projectBorder;
   border-right: 1px solid $projectBorder;
   border-bottom: 1px solid $projectBorder;
-  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
-    .project__item:first-child & {
-      padding-bottom: 56px;
-    }
-  }
+  flex-grow: 1;
 }
 
 .project__title {
