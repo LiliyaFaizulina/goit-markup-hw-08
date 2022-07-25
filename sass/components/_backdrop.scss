@@ -5,8 +5,14 @@
 
   z-index: 101;
 
+  @media screen and (max-width: ($tablet - 1px)) {
+    padding-top: 93px;
+  }
+
   width: 100vw;
   height: 100vh;
+
+  overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
