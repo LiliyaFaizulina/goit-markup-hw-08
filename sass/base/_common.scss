@@ -5,16 +5,16 @@
   padding-right: 15px;
   width: 100%;
 
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
+  @include mq(mobile) {
+    width: 480px;
   }
 
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
+  @include mq(tablet) {
+    width: 768px;
   }
 
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
+  @include mq(desktop) {
+    width: 1200px;
   }
 }
 
@@ -22,7 +22,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

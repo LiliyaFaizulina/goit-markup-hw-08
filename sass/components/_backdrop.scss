@@ -5,7 +5,7 @@
 
   z-index: 101;
 
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     padding-top: 93px;
   }
 

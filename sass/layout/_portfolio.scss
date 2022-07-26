@@ -9,12 +9,12 @@
   column-gap: 8px;
   margin-bottom: 40px;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     justify-content: center;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-bottom: 50px;
   }
 }

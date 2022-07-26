@@ -292,7 +292,7 @@ address {
 .menu-btn {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu-btn {
     position: absolute;
     top: 10px;
@@ -329,7 +329,7 @@ address {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu {
     position: absolute;
     top: 0;
@@ -355,7 +355,7 @@ address {
 .mobile-menu__socials {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu__socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -394,7 +394,7 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .header__container {
     position: relative;
     padding-top: 16px;
@@ -429,7 +429,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .navigation {
     margin-bottom: auto;
   }
@@ -450,7 +450,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .navigation__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -497,7 +497,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .header__contacts {
     margin-bottom: 64px;
   }
@@ -508,7 +508,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -541,7 +541,7 @@ address {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .contacts__link--mail {
     color: #757575;
     font-size: 24px;
@@ -554,7 +554,7 @@ address {
     line-height: 1.1764705882;
   }
 }
-@media screen and (max-width: 767px) and (max-width: 350px) {
+@media screen and (max-width: 767.98px) and (max-width: 350px) {
   .contacts__link--tel {
     font-size: 9vw;
   }
@@ -591,7 +591,7 @@ address {
 .contacts__icon {
   margin-right: 8px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .contacts__icon {
     display: none;
   }
@@ -693,7 +693,7 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -735,7 +735,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .benefits__title {
     text-align: center;
   }
@@ -750,7 +750,7 @@ address {
 .services {
   background-color: #ffffff;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .services {
     display: none;
   }
@@ -844,7 +844,7 @@ address {
   border-bottom-right-radius: 4px;
   background-color: #ffffff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .staff__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -995,7 +995,7 @@ address {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__wrapper {
     margin-bottom: 60px;
     gap: 165px;
@@ -1005,7 +1005,7 @@ address {
 .footer__contacts {
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .footer__contacts {
     margin-bottom: 60px;
   }
@@ -1019,7 +1019,7 @@ address {
 .footer__socials {
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .footer__socials {
     margin-bottom: 60px;
   }
@@ -1044,7 +1044,7 @@ address {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__subscription {
     text-align: center;
   }
@@ -1167,7 +1167,7 @@ address {
 .project__item {
   max-width: 450px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .project__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1273,7 +1273,7 @@ address {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .backdrop {
     padding-top: 93px;
   }

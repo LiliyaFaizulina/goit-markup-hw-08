@@ -8,7 +8,7 @@
   @include textStyle(map-get($colors, 'title'), 28px, calc(33 / 28));
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -17,7 +17,7 @@
 }
 
 .staff__list {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     @include flexBox();
     gap: $primaryGap;
     flex-wrap: wrap;
@@ -26,18 +26,18 @@
 
 .staff__item {
   &:not(:last-child) {
-    @media screen and (max-width: ($tablet - 1px)) {
+    @include mq(mobile-only) {
       margin-bottom: 30px;
     }
   }
 
   max-width: 450px;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     max-width: 354px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     max-width: 270px;
   }
 
@@ -52,7 +52,7 @@
   padding: 30px 10px 24px;
 
   text-align: center;
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     padding-bottom: 30px;
   }
 }

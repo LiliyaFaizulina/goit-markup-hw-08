@@ -4,33 +4,33 @@
 }
 
 .header__container {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     position: relative;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     display: flex;
     align-items: center;
   }
 }
 
 .mobile-menu {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     @include flexBox();
     flex-grow: 1;
   }
 }
 
 .navigation {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     margin-bottom: auto;
   }
 }
 
 .navigation__list {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     @include flexBox();
     gap: 50px;
   }
@@ -38,7 +38,7 @@
 
 .navigation__item {
   &:not(:last-child) {
-    @media screen and (max-width: ($tablet - 1px)) {
+    @include mq(mobile-only) {
       margin-bottom: 32px;
     }
   }
@@ -56,7 +56,7 @@
     color: $accentColor;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -68,7 +68,7 @@
 .navigation__link--current {
   color: $accentColor;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     position: relative;
 
     &::after {
@@ -86,30 +86,30 @@
 }
 
 .header__contacts {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     margin-bottom: 64px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     margin-left: auto;
   }
 }
 
 .contacts {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     display: flex;
     flex-direction: column-reverse;
     gap: 32px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     @include flexBox();
     gap: $primaryGap;
   }
 }
 
 .contacts__link {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     &--mail {
       color: map-get($colors, 'primaryText');
       font-size: 24px;
@@ -121,6 +121,7 @@
       color: $accentColor;
       font-size: 34px;
       line-height: calc(40 / 34);
+
       @media screen and (max-width: 350px) {
         font-size: 9vw;
       }
@@ -136,7 +137,7 @@
     color: $accentColor;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     @include flexBox(flex, start);
     font-size: 12px;
     line-height: calc(14 / 12);
@@ -144,7 +145,7 @@
     padding-bottom: 5px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -154,14 +155,14 @@
 }
 
 .contacts__icon {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     display: none;
   }
 
   @extend %icon;
   margin-right: 8px;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-right: 10px;
   }
 }

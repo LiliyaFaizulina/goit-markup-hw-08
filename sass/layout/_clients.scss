@@ -8,7 +8,7 @@
   @include textStyle(map-get($colors, 'title'), 28px, calc(33 / 28));
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -26,11 +26,11 @@
   flex-basis: calc((100% - $primaryGap) / 2);
   height: 92px;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     flex-basis: calc((100% - $primaryGap * 2) / 3);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     flex-basis: calc((100% - $primaryGap * 5) / 6);
   }
 }

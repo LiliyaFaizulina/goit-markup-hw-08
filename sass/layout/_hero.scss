@@ -21,7 +21,7 @@
 
   text-align: center;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     padding-bottom: 118px;
 
     max-width: 768px;
@@ -35,7 +35,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     min-height: 600px;
@@ -61,7 +61,7 @@
   font-weight: 900;
   text-transform: uppercase;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     max-width: 696px;
     font-size: 44px;
     line-height: calc(60 / 44);

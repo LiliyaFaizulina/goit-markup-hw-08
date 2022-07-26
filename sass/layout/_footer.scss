@@ -6,40 +6,41 @@
 }
 
 .footer__container {
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     @include flexBox();
   }
 }
 
 .footer__wrapper {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     @include flexBox();
   }
-  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+  @include mq(tablet-only) {
     margin-bottom: 60px;
     gap: 165px;
   }
 }
 
 .footer__contacts {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     margin-bottom: 60px;
   }
 
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     text-align: left;
   }
 }
 
 .footer__socials {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     margin-bottom: 60px;
   }
 
   text-align: center;
-  @media screen and (min-width: $desktop) {
+
+  @include mq(desktop) {
     margin-left: 85px;
     align-self: start;
     padding-top: 12px;
@@ -56,11 +57,11 @@
 }
 
 .footer__subscription {
-  @media screen and (max-width: ($desktop - 1px)) {
+  @include mq(not-desktop) {
     text-align: center;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-left: auto;
     align-self: start;
     padding-top: 12px;
@@ -68,7 +69,7 @@
 }
 
 .footer__form {
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     display: flex;
   }
 }
@@ -95,7 +96,7 @@
     @include textStyle(map-get($colors, 'translucentText'), $primaryFontSize, calc(20 / 16));
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-right: 12px;
     margin-left: 0;
 

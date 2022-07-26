@@ -6,18 +6,18 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     font-size: 26px;
     line-height: calc(31 / 26);
   }
 }
 
 .header__logo {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     margin-right: 88px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     margin-right: 93px;
   }
 }

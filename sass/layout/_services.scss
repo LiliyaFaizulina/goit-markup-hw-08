@@ -1,5 +1,5 @@
 .services {
-  @media screen and (max-width: 1199px) {
+  @include mq(not-desktop) {
     display: none;
   }
   background-color: getBgColor('primary');

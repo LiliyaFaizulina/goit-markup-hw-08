@@ -1,5 +1,5 @@
 .project {
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: $primaryGap;
@@ -7,7 +7,7 @@
 }
 
 .project__item {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @include mq(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -15,11 +15,11 @@
 
   max-width: 450px;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tablet) {
     max-width: calc((100% - $primaryGap) / 2);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     max-width: calc((100% - $primaryGap * 2) / 3);
   }
 }
