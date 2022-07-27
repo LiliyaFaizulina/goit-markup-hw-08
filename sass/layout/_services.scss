@@ -13,7 +13,7 @@
 }
 
 .services__list {
-  @include flexBox();
+  display: flex;
   gap: $primaryGap;
 }
 

@@ -18,7 +18,7 @@
 
 .staff__list {
   @include mq(tablet) {
-    @include flexBox();
+    display: flex;
     gap: $primaryGap;
     flex-wrap: wrap;
   }

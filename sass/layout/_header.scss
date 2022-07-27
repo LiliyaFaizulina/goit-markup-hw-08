@@ -18,7 +18,8 @@
 
 .mobile-menu {
   @include mq(tablet) {
-    @include flexBox();
+    display: flex;
+    align-items: center;
     flex-grow: 1;
   }
 }
@@ -31,7 +32,7 @@
 
 .navigation__list {
   @include mq(tablet) {
-    @include flexBox();
+    display: flex;
     gap: 50px;
   }
 }
@@ -103,7 +104,7 @@
   }
 
   @include mq(desktop) {
-    @include flexBox();
+    display: flex;
     gap: $primaryGap;
   }
 }
@@ -138,14 +139,18 @@
   }
 
   @include mq(tablet) {
-    @include flexBox(flex, start);
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 
   @include mq(desktop) {
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -160,9 +165,4 @@
   }
 
   @extend %icon;
-  margin-right: 8px;
-
-  @include mq(desktop) {
-    margin-right: 10px;
-  }
 }

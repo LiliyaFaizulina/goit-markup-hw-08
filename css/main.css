@@ -420,9 +420,6 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -440,12 +437,6 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 50px;
   }
 }
@@ -525,12 +516,6 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 30px;
   }
 }
@@ -567,20 +552,19 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    font-size: 12px;
-    line-height: 1.1666666667;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.1666666667;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -588,17 +572,9 @@ address {
   }
 }
 
-.contacts__icon {
-  margin-right: 8px;
-}
 @media screen and (max-width: 767.98px) {
   .contacts__icon {
     display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__icon {
-    margin-right: 10px;
   }
 }
 
@@ -769,12 +745,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
 }
 
@@ -824,12 +794,6 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
