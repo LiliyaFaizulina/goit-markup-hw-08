@@ -932,37 +932,27 @@ address {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer__wrapper {
-    margin-bottom: 60px;
-    gap: 165px;
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 165px;
+       -moz-column-gap: 165px;
+            column-gap: 165px;
+    row-gap: 60px;
   }
 }
 
@@ -991,9 +981,6 @@ address {
 @media screen and (min-width: 1200px) {
   .footer__socials {
     margin-left: 85px;
-    -ms-flex-item-align: start;
-        align-self: start;
-    padding-top: 12px;
     text-align: left;
   }
 }
@@ -1016,9 +1003,6 @@ address {
 @media screen and (min-width: 1200px) {
   .footer__subscription {
     margin-left: auto;
-    -ms-flex-item-align: start;
-        align-self: start;
-    padding-top: 12px;
   }
 }
 
@@ -1032,9 +1016,6 @@ address {
 
 .footer__input {
   display: block;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 16px;
   max-width: 450px;
   width: 100%;
@@ -1079,10 +1060,21 @@ address {
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 1199.98px) {
+  .footer__input {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__input {
     margin-right: 12px;
-    margin-left: 0;
     width: 358px;
   }
 }
