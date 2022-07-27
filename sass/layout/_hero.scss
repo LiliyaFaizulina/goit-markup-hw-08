@@ -1,3 +1,9 @@
+main {
+  @include mq(mobile-only) {
+    padding-top: 61px;
+  }
+}
+
 .hero {
   margin-left: auto;
   margin-right: auto;
